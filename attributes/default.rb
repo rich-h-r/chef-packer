@@ -1,7 +1,7 @@
 node.default[:packer][:url_base] = "https://dl.bintray.com/mitchellh/packer"
 node.default[:packer][:version] = "0.5.1"
 node.default[:packer][:arch] = kernel['machine'] =~ /x86_64/ ? "amd64" : "386"
-node.default[:packer_windows_plugin][:url_base] = "https://github.com/packer-community/packer-windows-plugins/releases/tag"
+node.default[:packer_windows_plugin][:url_base] = "https://github.com/packer-community/packer-windows-plugins/releases/download"
 node.default[:packer_windows_plugin][:version] = "1.0.0"
 # Transform raw output of the bintray checksum list into a Hash[filename, checksum].
 # https://dl.bintray.com/mitchellh/packer/${VERSION}_SHA256SUMS?direct
